@@ -26,6 +26,7 @@ git submodule update --init --recursive
 2. 删除.gitmodules记录: git rm -f --cache repo/repoExample
 3. 删除文件夹：rm -rf .git/modules/repo/repoExample
 4. 删除文件夹：rm -rf repo/repoExample
+5. vim .git/config
 
 ---
 
@@ -34,7 +35,6 @@ git submodule  deinit --force repo/repoExample
 git rm -f --cache repo/repoExample
 rm -rf repo/repoExample
 rm -rf .git/modules/repo/repoExample
-
 ```
 
 
