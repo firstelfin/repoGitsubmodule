@@ -1,0 +1,4 @@
+[submodule "repo/repoExample"]
+	path = repo/repoExample
+	url = https://github.com/firstelfin/repoExample.git
+	branch = main
