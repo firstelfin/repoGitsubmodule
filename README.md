@@ -23,11 +23,9 @@ git submodule update --init --recursive
 # 删除子模块
 
 1. git submodule  deinit --force repo/repoExample  清除文件夹 'repo/repoExample'
-2. 删除.gitmodules记录: git rm -f repo/repoExample
-3. 删除缓存：git rm --cache repo/repoExample
-4. 删除文件夹：rm -rf .git/modules/repo/repoExample
-5. 删除文件夹：rm -rf repo/repoExample
-6. 删除.gitmodules记录: git rm -f repo/repoExample
+2. 删除.gitmodules记录: git rm -f --cache repo/repoExample
+3. 删除文件夹：rm -rf .git/modules/repo/repoExample
+4. 删除文件夹：rm -rf repo/repoExample
 
 ---
 
@@ -38,6 +36,13 @@ rm -rf repo/repoExample
 rm -rf .git/modules/repo/repoExample
 
 ```
+
+
+# 子模块导入规则
+
+子模块的根目录需要写入环境变量，防止子模块导包报错！
+
+测试脚本：testInfer.py
 
 
 参考资源
